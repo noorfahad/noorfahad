@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main()
+{
+    int number,i;
+    int fact =1;
+    
+    printf("Enter the number: ");
+    scanf("%d", &number);
+    
+    for (i=1; i<=number; i++)
+    {
+        
+        printf("Display the factorial sequence: %d\n",i);
+        
+        fact=fact*i;
+        
+    }
+    printf("Display the factorial of %d is: %d", number,fact);
+    
+}
