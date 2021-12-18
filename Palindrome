@@ -1,0 +1,32 @@
+#include<stdio.h>
+
+int main()
+{
+    int temp,r,num;
+    int sum=0;
+    
+    printf("Enter the number: ");
+    scanf("%d", &num);
+
+    temp=num;
+    
+    while (num>0)
+    
+    {
+        r=num%10;  // this line is use to seperate last digit
+        sum=(sum*10)+r; // this line is use to reverse last digit by making previous number value '0'
+        num=num/10; 
+    }
+    
+    if (temp==sum)
+    {
+        printf("Palindrome number");
+    }
+    else
+    {
+        printf("Non Palindrome number");
+    }
+}
+
+
+
